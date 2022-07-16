@@ -2,6 +2,8 @@
 
 This repository is a fast way to learn or review Git and GitHub.
 
+if you want fast access to git and github commands, you can see the folders in this repository.
+
 table of content:
 
 - [Introduction and what is Git](#introduction)
