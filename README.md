@@ -65,6 +65,9 @@ after run this command you will notice that all files in the folder have a lette
         git add --all
 >this command will add all files of the project to the staging area.
 
+*warning:* empty folders will not be added to the staging area and git will not track them.
+
+        git commit -m "message"
 
 *staging area means files now are ready to be commited.*
 
