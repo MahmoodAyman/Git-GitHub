@@ -38,9 +38,7 @@ it watches files and what you do and compare it with last commit.
 all what you need to install Git is:
 
 1. download the latest version of Git from these links:
-   - [**Git for Windows**](https://gitforwindows.org/)
-   - [**Git for Mac**](https://git-scm.com/downloads)
-   - [**Git for Linux**](https://git-scm.com/downloads)
+   - [**Download Git**](https://git-scm.com/downloads)
 2. it's a normal installation process so you can use it right away
 
 ---
