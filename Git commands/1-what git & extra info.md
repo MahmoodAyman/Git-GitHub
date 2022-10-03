@@ -104,3 +104,28 @@ git stash pop
 ```
 this command will apply the last stash you have and remove it from the stash list.
 ---
+
+# Git clean
+it lets you remove untracked files from your branch.
+
+```bash
+git clean -n
+```
+this command will show you all the untracked files you have.
+
+```bash
+git clean -f
+``` 
+
+this is a force command and it will remove all the untracked files you have.
+
+```bash
+git clean -d
+```
+this command will remove all the untracked directories and subdirectories you have.
+
+you can combine these commands to get the result you want.
+
+```bash
+git clean -df
+```
