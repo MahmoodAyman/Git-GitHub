@@ -1,5 +1,13 @@
 ## start with Git
 
+### Table of content:
+- [Intialize | init ](#initialize-a-repository)
+- [Staging | ADD](#staging-area)
+- [Commit](#commit)
+- [Git | Get Info](#git-info)
+- [Discard](#discard-changes)
+- [Clear Cash](#clear-cache)
+- [Compare Files (diff)](#differece-between-files)
 ### Initialize a repository
 
 1. first things first open a project folder in your Editor.
@@ -9,7 +17,7 @@ git init
 ```
 this command will create a new folder called .git and will setup your project to be a git repository.
 
-after run this command you will notice that all files in the folder have a letter *U*. **that means they are not <span style="color:green">tracked</span> by git yet**. 
+after run this command you will notice that all files in the folder have a letter *U*. that means they are not <span style="color:green">tracked</span> by git yet. 
 ---
 
 ### Staging area
@@ -61,6 +69,13 @@ git log
 
 this command will show you all commits you made to make sure that you are commited the files at the right branch.
 
+when your logs gets long you can use this command to make it shorter:
+
+```bash
+git log --oneline
+```
+this command will show you all commits you made in one line in a short way.
+
 ```bash
 git status
 ```
@@ -93,3 +108,24 @@ git rm -r --cached .
 
 after make a lot of commits may be cash run dirty and you need to clear it.
 this command will clear the cache of git and will remove all files from the staging area.
+
+--- 
+
+### Differece between Files
+
+```bash
+git diff
+```
+
+this command will show you the difference between the file before and after Modification.
+
+
+this also show you the files you deleted or change name of it.
+but since renaming means deleting the old file and adding the new one, git will show you the old file as deleted and the new one as added. [see Here](/Git%20commands/Delete%20and%20Rename.md)
+
+this command will show you all the content of the file in the Terminal and it will be hard to read.
+
+
+VS Code has a great extension called [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) that will show you the difference between the files in the editor.
+
+or without extension you can use the source control tab in VS Code to see the difference between the files.

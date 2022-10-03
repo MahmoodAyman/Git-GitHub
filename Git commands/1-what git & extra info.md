@@ -62,7 +62,45 @@ any new files you added since the last commit will be untracked.
     2. **modified**: means that the file is tracked and has changes since the last commit.
     3. **staged**: means that the file is tracked and has changes since the last commit and it's ready to be commited.
 
-
---- 
+---
 something important to know: 
 git is always looking at your files and compare them with the last commit you made.
+---
+# Conflicts 
+conflicts happen when you have two branches with different commits and you want to merge them together.
+
+for example: 
+
+you and colleague are working on the same project and you both edit the same file and you both commit the changes.
+
+when you try to merge the branches together you will get a **conflict**.
+--- 
+# Git Stash
+```bash
+git stash
+```
+this command will save your changes in a temporary area and you can get them back later.
+
+For example:
+if you are working on a project and you have to fix some bugs but you already made some changes to the code and you don't want to commit them yet you can use this command to save your changes and get them back later.
+
+this will take your changes and put them in a temporary area and you can get them back later.
+
+### Controls 
+
+```bash
+git stash list
+```
+this command will show you all the stashes you have stored.
+
+
+```bash
+git stash apply
+```
+this command will apply the last stash you have.
+
+```bash
+git stash pop
+```
+this command will apply the last stash you have and remove it from the stash list.
+---
